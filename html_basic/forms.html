@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Irina Shirobokova" />
+	<title>Формы</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header id="header">
+		<nav id="nav">
+			<ol type="I">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="index.html">Обо мне</a>
+				</li>
+				<li>
+					<a href="#">Медиа</a>
+					<ul>
+						<li>
+							<a href="#">Фото</a>
+						</li>
+						<li>
+							<a href="#">Видео</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="active">Формы</a>
+				</li>
+			</ol>
+		</nav>
+		<h1 id="h1">HTML-форма</h1>
+	</header>
+	<form role="form" id="form">
+		<fieldset id="fieldset">
+			<legend id="legend">Форма</legend>
+
+			<!-- Поле для ввода имени -->
+			<div id="text-block">
+				<label>Ваше имя</label>
+			    <input id="text" type="text" name="name" placeholder="Введите имя"> 
+			</div>
+
+			<!-- Поле для ввода номера телефона -->
+			<div id="tel-block">
+				<label>Ваш телефон</label>
+			    <input id="tel" type="tel" name="phone number" placeholder="Введите телефон"> 
+			</div>
+
+			<!-- Поле для ввода e-mail -->
+			<div id="email-block">
+				<label>Ваш e-mail</label>
+			    <input id="email" type="email" name="email" placeholder="Введите e-mail"> 
+			</div>
+
+			<!-- Поле для ввода URL-адреса -->
+			<div id="url-block">
+				<label>Ваш сайт</label>
+			    <input id="url" type="url" name="url" placeholder="Введите URL"> 
+			</div>
+
+			<!-- Поле для ввода пароля -->
+			<div id="password-block">
+				<label>Ваш пароль</label>
+			    <input id="password" type="password" name="password" placeholder="Введите пароль"> 
+			</div>
+
+			<!-- Поле для ввода текстового сообщения -->
+		    <div id="comment-block">
+			    <label>Комментарий</label>
+			    <textarea id="comment" name="text" placeholder="Введите комментарий...">Текст сообщения</textarea>
+		    </div>
+			
+			<!-- Выбор файла -->
+			<div id="file-block">
+				<label>Выберите файл</label>
+			    <input id="file" type="file" name="file" placeholder="Выберите файл"> 
+			</div>
+
+			<!-- Выбор цвета -->
+			<div id="color-block">
+				<label>Выберите цвет</label>
+			    <input id="color" type="color" name="color"> 
+			</div>
+
+			<!-- Выбор календарной даты -->
+			<div id="date-block">
+				<label>Выберите дату</label>
+			    <input id="date" type="date" name="date"> 
+			</div>
+
+			<!-- Выбор месяца -->
+			<div id="month-block">
+				<label>Выберите месяц</label>
+			    <input id="month" type="month" name="month"> 
+			</div>
+
+			<!-- Выбор недели -->
+			<div id="week-block">
+				<label>Выберите неделю</label>
+			    <input id="week" type="week" name="week"> 
+			</div>
+
+			<!-- Выбор даты и времени -->
+			<div id="datetime-block">
+				<label>Введите дату и время</label>
+			    <input id="datetime" type="datetime" name="datetime" placeholder="Введите дату и время"> 
+			</div>
+
+			<!-- Выбор локальной даты и времени -->
+			<div id="datetime-local-block">
+				<label>Выберите местную дату и время</label>
+			    <input id="datetime-local" type="datetime-local" name="local datetime"> 
+			</div>
+
+			<!-- Поле для ввода числа -->
+			<div id="number-block">
+				<label>Введите число</label>
+			    <input id="number" type="number" name="number" placeholder="Введите число"> 
+			</div>
+
+			<!-- Ползунок -->
+			<div id="range-block">
+				<label>Ползунок</label>
+			    <input id="range" type="range"> 
+			</div>
+
+			<!-- Поле поиска -->
+			<div id="search-block">
+				<label>Поиск</label>
+			    <input id="search" type="search" name="text" placeholder="Введите текст">
+			</div>
+
+			<!-- Чекбоксы -->
+			<div id="checkbox-block">
+				<label>Выберите несколько</label>
+			    <input id="onecheck" type="checkbox">
+			    <label for="onecheck">1</label>
+
+			    <input id="twocheck"type="checkbox">
+			    <label for="twocheck">2</label>
+
+			    <input id="threecheck" type="checkbox">
+			    <label for="threecheck">3</label>
+			</div>
+
+			<!-- Радио -->
+			<div id="radio-block">
+				<label>Выберите один</label>
+			    <input id="one" name="role" type="radio">
+			    <label for="one">1</label>
+
+			    <input id="two" name="role" type="radio">
+			    <label for="two">2</label>
+			    
+			    <input id="three" name="role" type="radio">
+			    <label for="three">3</label>
+			</div>
+
+			<!-- Скрытое поле -->
+			<div id="hidden-block">
+				<label>Скрытое поле</label>
+			    <input id="hidden" type="hidden" name="text"> 
+			</div>
+		</fieldset>
+
+		<!-- Кнопка в виде картинки -->
+			<div id="image-btn-block">
+			    <input id="image-btn" type="image" src="image/btn.png" width="170px"> 
+			</div>
+
+		<!-- Кнопка отправки-->
+		<button id="submit" type="submit">Отправить</button>
+		
+		<!-- Кнопка сброса-->
+		<button id="reset" type="reset">Сбросить</button>
+	</form>	
+</body>
+</html>

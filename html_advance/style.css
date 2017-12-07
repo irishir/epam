@@ -24,6 +24,17 @@ a:visited {
 	font-weight: 600;
 }
 
+.img-container {
+	background: url("assets/image/adv.jpg") top right / cover no-repeat;
+	width: 400px;
+	height: 400px;
+}
+
+.ad-block {
+	display: block;
+	float: right;
+}
+
 .footer {
 	background:  #282828;
 	color: #fff;

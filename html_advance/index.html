@@ -4,33 +4,48 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Irina Shirobokova" />
 	<title>Аудиокниги</title>
-	<link rel="stylesheet" href="assets/styles/style.css">
+	<link rel="stylesheet" href="assets/styles/main.css">
 </head>
 <body>
 	<header>
 		<h1>Аудиокниги</h1>
 	</header>
+	<aside>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod officiis illum tempore suscipit facilis ipsum quos dolores beatae, alias consectetur autem sint, excepturi voluptate quia quis debitis necessitatibus iste. Similique!</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eius eum, quos impedit qui et aperiam ratione harum omnis velit perferendis illum repudiandae nihil, dicta adipisci aspernatur officiis. Eum, molestiae.</p>
+		<div class="img-container"></div>
+	</aside>
 
 		<main>
 			<section>
 				<h3>Авторизация</h3>
-				<form>
+				<form action="/">
 					<div>
 						<label>Логин</label>
-						<input type="email" placeholder="Введите e-mail" required autofocus>
-					</div>
+						<input
+							type="email"
+							placeholder="Введите e-mail"
+							required
+							autofocus
+						></div>
 					<div>
 						<label>Пароль</label>
-						<input type="password" placeholder="Введите пароль" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" title="Пароль должен содержать цифры, прописные и строчные буквы. Длина пароля - не менее 8 символов">
-					</div>
+						<input
+							type="password"
+							placeholder="Введите пароль"
+							pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" title="Пароль должен содержать цифры, прописные и строчные буквы. Длина пароля - не менее 8 символов"
+							required
+					></div>
 					<div>
-						<input type="submit" value="Войти">
-					</div>
+						<input
+							type="submit"
+							value="Войти"
+					></div>
 				</form>
 			</section>
 
 			<nav class="nav">
-				<ol>
+				<ul>
 					<li>
 						<a href="#" class="nav__active">Главная</a>
 					</li>
@@ -43,7 +58,7 @@
 					<li>
 						<a href="#">Исполнители</a>
 					</li>
-				</ol>
+				</ul>
 			</nav>
 
 			<aside class="ad-block">
@@ -55,13 +70,18 @@
 				<h3>Поиск по сайту</h3>
 				<form>
 					<div>
-						<input type="search" name="search" placeholder="Поиск">
-						<input type="submit" value="Найти">
+						<input
+							type="search"
+							name="search"
+							placeholder="Поиск">
+						<input
+							type="submit"
+							value="Найти">
 					</div>
 				</form>
 			</section>
 
-			<section class="new">
+			<section>
 				<header>
 					<h2>Новинки</h2>
 					<p>В нашей электронной библиотеке можно не только слушать и скачивать аудиокниги, но и смотреть и скачивать экранизации, снятые по некоторым произведениям!</p>
@@ -70,22 +90,52 @@
 					<h4>Агата Кристи "Убийство в Восточном экспрессе"</h4>
 						<div>
 							<p>Экранизация</p>
-							<video controls id="video" src="assets/media/video/01.mp4" poster="//www.telegraph.co.uk/content/dam/films/2017/11/03/IQyEvPTYvrzsa7qstRj6VLQupr_trans_NvBQzQNjv4BqkTy_xViCQQobdE1oS-7FIzw-Amm-myOYAU80Gz7pmgY.jpg" width="420px" height="250px">Your browser does not support HTML5 video.</video>
+							<video
+								controls
+								id="video"
+								src="assets/media/video/01.mp4"
+								poster="//www.telegraph.co.uk/content/dam/films/2017/11/03/IQyEvPTYvrzsa7qstRj6VLQupr_trans_NvBQzQNjv4BqkTy_xViCQQobdE1oS-7FIzw-Amm-myOYAU80Gz7pmgY.jpg"
+								width="420"
+								height="250"
+							>
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div>
 							<p>Аудиокнига</p>
-							<audio controls id="audio" src="assets/media/audio/01.mp3">Your browser does not support the audio element.</audio>
+							<audio
+								controls
+								id="audio"
+								src="assets/media/audio/01.mp3"
+							>
+								Your browser does not support the audio element.
+							</audio>
 						</div>
 				</article>
 				<article>
 					<h4>Фрэнсис Скотт Фицджеральд "Великий Гэтсби"</h4>
 						<div>
 							<p>Экранизация</p>
-							<video controls src="assets/media/video/02.mp4" poster="//bagnenko.name/wp-content/uploads/2015/07/Leonardo_DiCaprio_-_The_Great_Gatsby.jpg" width="420px" height="250px" loop autoplay>Your browser does not support HTML5 video.</video>
+							<video
+								controls
+								src="assets/media/video/02.mp4"
+								poster="//bagnenko.name/wp-content/uploads/2015/07/Leonardo_DiCaprio_-_The_Great_Gatsby.jpg"
+								width="420"
+								height="250"
+								loop
+								autoplay
+							>
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div>
 							<p>Аудиокнига</p>
-							<audio controls src="assets/media/audio/02.mp3">Your browser does not support the audio element.</audio>
+							<audio
+								controls
+								src="assets/media/audio/02.mp3"
+							>
+								Your browser does not support the audio element.
+							</audio>
 						</div>
 				</article>
 				<footer>
@@ -94,7 +144,7 @@
 				</footer>
 			</section>
 
-			<section class="popular">
+			<section>
 				<header>
 					<h2>Популярное</h2>
 					<p>Эти книги прославились благодаря успешным экранизациям, но их бы не было если бы не талант писателя.</p>
@@ -103,22 +153,49 @@
 					<h4>Стивен Кинг "Оно"</h4>
 						<div>
 							<p>Экранизация</p>
-							<video controls src="assets/media/video/03.mp4" poster="//sputnik.kg/images/103512/85/1035128560.jpg" width="420px" height="250px">Your browser does not support HTML5 video.</video>
+							<video
+								controls
+								src="assets/media/video/03.mp4"
+								poster="//sputnik.kg/images/103512/85/1035128560.jpg"
+								width="420"
+								height="250"
+							>
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div>
 							<p>Аудиокнига</p>
-							<audio controls src="assets/media/audio/03.mp3">Your browser does not support the audio element.</audio>
+							<audio
+								controls
+								src="assets/media/audio/03.mp3"
+							>
+								Your browser does not support the audio element.
+							</audio>
 						</div>
 				</article>
 				<article>
 					<h4>Стивен Кинг "Темная башня"</h4>
 						<div>
 							<p>Экранизация</p>
-							<video controls src="assets/media/video/04.mp4"  poster="//cdn.vdmsti.ru/image/2017/60/fyg0/default-kp.jpg" width="420px" height="250px" loop>Your browser does not support HTML5 video.</video>
+							<video
+								controls
+								src="assets/media/video/04.mp4"
+								poster="//cdn.vdmsti.ru/image/2017/60/fyg0/default-kp.jpg"
+								width="420"
+								height="250"
+								loop
+							>
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div>
 							<p>Аудиокнига</p>
-							<audio controls src="assets/media/audio/04.mp3">Your browser does not support the audio element.</audio>
+							<audio
+								controls
+								src="assets/media/audio/04.mp3"
+							>
+								Your browser does not support the audio element.
+							</audio>
 						</div>
 				</article>
 				<footer>
@@ -127,7 +204,7 @@
 				</footer>
 			</section>
 
-			<section class="rus-classic">
+			<section>
 				<header>
 					<h2>Русская классика</h2>
 					<p>Неустаревающая русская классическая литература</p>
@@ -136,22 +213,49 @@
 					<h4>Лев Толстой "Анна Каренина"</h4>
 						<div>
 							<p>Экранизация</p>
-							<video controls src="assets/media/video/05.mp4" poster="//gdb.rferl.org/AE7103B6-A1C7-4ACD-9160-33DA4745FD95_w1023_r1_s.jpg" width="420px" height="250px">Your browser does not support HTML5 video.</video>
+							<video
+								controls
+								src="assets/media/video/05.mp4"
+								poster="//gdb.rferl.org/AE7103B6-A1C7-4ACD-9160-33DA4745FD95_w1023_r1_s.jpg"
+								width="420"
+								height="250"
+							>
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div>
 							<p>Аудиокнига</p>
-							<audio controls src="assets/media/audio/05.mp3">Your browser does not support the audio element.</audio>
+							<audio
+								controls
+								src="assets/media/audio/05.mp3"
+							>
+								Your browser does not support the audio element.
+							</audio>
 						</div>
 				</article>
 				<article>
 					<h4>Лев Толстой "Война и мир"</h4>
 						<div>
 							<p>Экранизация</p>
-							<video controls src="assets/media/video/06.mp4" poster="//ic.pics.livejournal.com/natali_ya/11122508/1046028/1046028_600.jpg" width="420px" height="250px" loop>Your browser does not support HTML5 video.</video>
+							<video
+								controls
+								src="assets/media/video/06.mp4"
+								poster="//ic.pics.livejournal.com/natali_ya/11122508/1046028/1046028_600.jpg"
+								width="420"
+								height="250"
+								loop
+							>
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div>
 							<p>Аудиокнига</p>
-							<audio controls src="assets/media/audio/06.mp3">Your browser does not support the audio element.</audio>
+							<audio
+								controls
+								src="assets/media/audio/06.mp3"
+							>
+								Your browser does not support the audio element.
+							</audio>
 						</div>
 				</article>
 				<footer>
@@ -160,7 +264,7 @@
 				</footer>
 			</section>
 
-			<section class="en-classic">
+			<section>
 				<header>
 					<h2>Английская классика</h2>
 					<p>Английская классическая литература</p>
@@ -169,22 +273,49 @@
 					<h4>Шарлотта Бронте "Джейн Эйр"</h4>
 						<div>
 							<p>Экранизация</p>
-							<video controls src="assets/media/video/07.mp4" poster="//selfire.com/wp-content/uploads/2011/03/Michael-Fassbender-left-and-Mia-Wasikowska-right.jpg" width="420px" height="250px">Your browser does not support HTML5 video.</video>
+							<video
+								controls
+								src="assets/media/video/07.mp4"
+								poster="//selfire.com/wp-content/uploads/2011/03/Michael-Fassbender-left-and-Mia-Wasikowska-right.jpg"
+								width="420"
+								height="250"
+							>
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div>
 							<p>Аудиокнига</p>
-							<audio controls src="assets/media/audio/07.mp3" >Your browser does not support the audio element.</audio>
+							<audio
+								controls
+								src="assets/media/audio/07.mp3"
+							>
+								Your browser does not support the audio element.
+							</audio>
 						</div>
 				</article>
 				<article>
 					<h4>Джейн Остин "Гордость и предубеждение"</h4>
 						<div>
 							<p>Экранизация</p>
-							<video controls src="assets/media/video/08.mp4" poster="//st.kp.yandex.net/im/wallpaper/4/2/9/kinopoisk.ru-Pride-_26_2338_3B-Prejudice-429204--w--800.jpg" width="420px" height="250px" loop>Your browser does not support HTML5 video.</video>
+							<video
+								controls
+								src="assets/media/video/08.mp4"
+								poster="//st.kp.yandex.net/im/wallpaper/4/2/9/kinopoisk.ru-Pride-_26_2338_3B-Prejudice-429204--w--800.jpg"
+								width="420"
+								height="250"
+								loop
+							>
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div>
 							<p>Аудиокнига</p>
-							<audio controls src="assets/media/audio/08.mp3">Your browser does not support the audio element.</audio>
+							<audio
+								controls
+								src="assets/media/audio/08.mp3"
+							>
+								Your browser does not support the audio element.
+							</audio>
 						</div>
 				</article>
 				<footer>

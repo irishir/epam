@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="assets/styles/main.css">
 
   <!--подключение Roboto -->
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
   <title>Авторизация</title>
 </head>
@@ -18,31 +18,33 @@
         <div class="popup-wrapper">
         <form action="/" class="login-form">
           <div class="close"></div>
-          <legend>Авторизация</legend>
-          <div class="login-form__content">
-            <label class="login-form__label">Логин</label>
-            <input class="login-form__email"
-              type="email"
-              placeholder="Введите e-mail"
-              required
-              autofocus
+          <fieldset>
+            <legend>Авторизация</legend>
+            <div class="login-form__content">
+              <label class="login-form__label">Логин</label>
+              <input class="login-form__email"
+                type="email"
+                placeholder="Введите e-mail"
+                required
+                autofocus
+              ></div>
+            <div class="login-form__content">
+              <label class="login-form__label">Пароль</label>
+              <input class="login-form__password"
+                type="password"
+                placeholder="Введите пароль"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" title="Пароль должен содержать цифры, прописные и строчные буквы. Длина пароля - не менее 8 символов"
+                required
             ></div>
-          <div class="login-form__content">
-            <label class="login-form__label">Пароль</label>
-            <input class="login-form__password"
-              type="password"
-              placeholder="Введите пароль"
-              pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" title="Пароль должен содержать цифры, прописные и строчные буквы. Длина пароля - не менее 8 символов"
-              required
-          ></div>
-          <div>
-            <input class="login-form__button"
-              type="submit"
-              value="Зарегистрироваться"
-          ></div>
-          <div class="sign-in">
-            <a href="#">Войти</a>
-          </div>
+            <div>
+              <input class="login-form__button"
+                type="submit"
+                value="Зарегистрироваться"
+            ></div>
+            <div class="sign-in">
+              <a href="#">Войти</a>
+            </div>
+        </fieldset>
         </form>
       </div>
     </main>

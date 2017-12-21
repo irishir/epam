@@ -21,6 +21,10 @@ legend{
 	text-align: center;
 }
 
+fieldset {
+	border: none;
+}
+
 .login-form {
 	background: #fff;
 	padding: 10px 30px 20px;
@@ -318,7 +322,7 @@ a:hover {
 	opacity: .4;
 	animation-name: light-on;
 	animation-duration: 4s;
-	animation-delay: 9s;
+	animation-delay: 10s;
 	animation-fill-mode: backwards;
 }
 
@@ -327,24 +331,27 @@ a:hover {
 	opacity: .4;
 	animation-name: light-on;
 	animation-duration: 4s;
-	animation-delay: 5s;
+	animation-delay: 6s;
 	animation-fill-mode: backwards;
 }
 
 .circle_green {
 	background: green;
 	opacity: .4;
-	animation-name: light-on;
-	animation-duration: 4s;
+	animation-name: green;
+	animation-duration: 5s;
 	animation-delay: 1s;
 	animation-fill-mode: backwards;
 }
 
-@keyframes blinking {
+@keyframes green {
 	0% {opacity: .4;}
-	25% {opacity: .4;}
-	50% {opacity: .4;}
-	75% {opacity: .4;}
+	15% {opacity: 1;}
+	30% {opacity: .4;}
+	45% {opacity: 1;}
+	60% {opacity: .4;}
+	75% {opacity: 1;}
+	90% {opacity: .4;}
 	100% {opacity: 1;}
 }
 

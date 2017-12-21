@@ -110,6 +110,7 @@ label{
 
 .search-form__input {
 	width: 300px;
+	transition: width .4s ease-in-out;
 }
 
 .search-form__button {
@@ -277,14 +278,15 @@ a:hover {
 }
 
 .search-form__input:focus {
-	animation: search-scale 0.4s ease-in-out;
-	animation-fill-mode: forwards;
+	/* animation: search-scale 0.4s ease-in-out;
+	animation-fill-mode: forwards; */
+	width: 600px;
 }
 
-@keyframes search-scale {
+/* @keyframes search-scale {
 	from {width: 300px; border-color: #ddd;}
 	to {width: 600px; border-color: #0099FA;}
-}
+} */
 
 .rectangle {
 	margin: 0 auto;

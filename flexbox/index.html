@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Irina Shirobokova" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--подключение main.css-->
+	<link rel="stylesheet" href="assets/styles/main.css">
+
+  <!--подключение Roboto -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <title>Weather</title>
+</head>
+<body>
+  
+  <header>
+    <h1>Weather</h1>
+    <form class="search-form">
+      <div class="search-form__content">
+        <input class="search-form__input"
+               type="search"
+               name="search"
+               placeholder="Search">
+       <input class="search-form__button"
+              type="submit"
+              value="Search">
+      </div>
+    </form>
+  </header>
+
+  <main>
+
+    <nav class="menu">
+      <h3>Navigation</h3>
+        <ul>
+          <li>
+            <a href="#" class="active">Item</a>
+          </li>
+          <li>
+            <a href="#">Item</a>
+          </li>
+          <li>
+            <a href="#">Item</a>
+          </li>
+          <li>
+            <a href="#">Item</a>
+          </li>
+          <li>
+            <a href="#">Item</a>
+          </li>
+          <li>
+            <a href="#">Item</a>
+          </li>
+        </ul>
+    </nav>
+
+    <article class="weather">
+
+      <h1>New York, NY</h1>
+
+      <section class="weather__date-forecast-day">
+        <time class="weather__date" datetime="2017-04-15">Tuesday, April 15th</time>
+        <p class="weather__forecast-day">Overcast</p>
+      </section>
+
+      <section class="weather__img-description">
+        <figure class="weather__img-wrapper">
+          <img class="weather__img-day" src="assets/images/Asset1.png" alt="overcast">
+          <h2 class="weather__value">58
+            <sup class="weather__fahrenheit">&deg;F</sup>
+          </h2>
+        </figure>
+
+        <section class="weather__description ">
+          <p class="weather__parameter">Precipitation:
+            <span class="weather__parameter-value">100%</span>
+          </p>
+
+          <p class="weather__parameter">Humidity:
+            <span class="weather__parameter-value">97%</span>
+          </p>
+
+          <p class="weather__parameter">Wind:
+            <span class="weather__parameter-value">4 mph SW</span>
+          </p>
+
+          <p class="weather__parameter">Pollen Count:
+            <span class="weather__parameter-value">36</span>
+          </p>
+        </section>
+      </section>
+
+      <section class="weather__forecast-week">
+        <article class="weather__forecast">
+          <h5>Today</h5>
+          <div class="weather__forecast-img-wrapper">
+            <img class="weather__forecast-img-week" src="assets/images/Asset2.png" alt="overcast">
+          </div>
+          <div class="weather__temperature-wrapper">
+            <p class="weather__forecast-temperature">68&deg;</p>
+            <p class="weather__forecast-temperature-two">36&deg;</p>
+          </div>
+          <p class="weather__forecast-pollen">Pollen 36</p>
+        </article>
+
+        <article class="weather__forecast">
+          <h5>Wednesday</h5>
+          <div class="weather__forecast-img-wrapper">
+            <img class="weather__forecast-img-week" src="assets/images/Asset3.png" alt="overcast">
+          </div>
+          <div class="weather__temperature-wrapper">
+            <p class="weather__forecast-temperature">68&deg;</p>
+            <p class="weather__forecast-temperature-two">36&deg;</p>
+          </div>
+          <p class="weather__forecast-pollen">Pollen 36</p>
+        </article>
+
+        <article class="weather__forecast">
+          <h5>Thursday</h5>
+          <div class="weather__forecast-img-wrapper">
+            <img class="weather__forecast-img-week" src="assets/images/Asset3.png" alt="overcast">
+          </div>
+          <div class="weather__temperature-wrapper">
+            <p class="weather__forecast-temperature">68&deg;</p>
+            <p class="weather__forecast-temperature-two">36&deg;</p>
+          </div>
+          <p class="weather__forecast-pollen">Pollen 36</p>
+        </article>
+
+        <article class="weather__forecast">
+          <h5>Friday</h5>
+          <div class="weather__forecast-img-wrapper">
+            <img class="weather__forecast-img-week" src="assets/images/Asset4.png" alt="overcast">
+          </div>
+          <div class="weather__temperature-wrapper">
+            <p class="weather__forecast-temperature">68&deg;</p>
+            <p class="weather__forecast-temperature-two">36&deg;</p>
+          </div>
+          <p class="weather__forecast-pollen">Pollen 36</p>
+        </article>
+
+        <article class="weather__forecast">
+          <h5>Saturday</h5>
+          <div class="weather__forecast-img-wrapper">
+            <img class="weather__forecast-img-week" src="assets/images/Asset5.png" alt="overcast">
+          </div>
+          <div class="weather__temperature-wrapper">
+            <p class="weather__forecast-temperature">68&deg;</p>
+            <p class="weather__forecast-temperature-two">36&deg;</p>
+          </div>
+          <p class="weather__forecast-pollen">Pollen 36</p>
+        </article>
+
+        <article class="weather__forecast">
+          <h5>Sunday</h5>
+          <div class="weather__forecast-img-wrapper">
+            <img class="weather__forecast-img-week" src="assets/images/Asset5.png" alt="overcast">
+          </div>
+          <div class="weather__temperature-wrapper">
+            <p class="weather__forecast-temperature">68&deg;</p>
+            <p class="weather__forecast-temperature-two">36&deg;</p>
+          </div>
+          <p class="weather__forecast-pollen">Pollen 36</p>
+        </article>
+
+        <article class="weather__forecast">
+          <h5>Monday</h5>
+          <div class="weather__forecast-img-wrapper">
+            <img class="weather__forecast-img-week" src="assets/images/Asset4.png" alt="overcast">
+          </div>
+          <div class="weather__temperature-wrapper">
+            <p class="weather__forecast-temperature">68&deg;</p>
+            <p class="weather__forecast-temperature-two">36&deg;</p>
+          </div>
+          <p class="weather__forecast-pollen">Pollen 36</p>
+        </article>
+      </section>
+    </article>
+
+    <aside>
+  		<h3>Advertisement</h3>
+      <div class="adv"></div>
+   	</aside>
+
+  </main>
+
+  <footer class="footer">
+		<div>
+			<div>
+				<small>Copyright © Shirobokova Irina<time datetime="2018-01-15">&nbsp;2018</time></small>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

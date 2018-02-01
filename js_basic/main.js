@@ -97,6 +97,17 @@ console.log(some([1, 2, 6], Number.isNaN));
 console.log(some([1, 4 ,NaN, 6], Number.isNaN));
 
 
+// Задача №9. Кавычки в тексте
+
+function replaceQuotes (str) {
+
+  var res = str.replace( /(\s|^)\'(.)/g, '$1\"$2' ).replace( /(.)\'(\s|$)/g, '$1\"$2' );
+  alert(res);
+}
+
+  replaceQuotes("I'm the 'hero'");
+
+
 // Задача №11. День и месяц
 
 function getNames (date) {

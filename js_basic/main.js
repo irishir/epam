@@ -23,23 +23,32 @@ console.log(countChar('My Random String', 'm'));
 
 // Задача №4. Наоборот
 
-function reverseArrayInPlace (array) {
-
-   for (var i = array.length-1; i >= 0 ; i--) {
-    console.log(array[i] + " ");
+function reverseArray (array) {
+  var reverse = new Array();
+  for (var i = array.length-1; i >= 0 ; i--) {
+     reverse.push(array[i]);
    }
+   console.log(reverse);
 }
 
-var array = ['A', 'B', 'C', 'D'];
-reverseArrayInPlace(array);
+reverseArray ([1, 2, 3, 4]);
 
-function reverseArray(array) {
-   for (var i = array.length; i > 0 ; i--) {
-    console.log(i + " ");
+
+function reverseArrayInPlace(array) {
+  var reverse;
+  var i = 0;
+  var j = array.length -1;
+  while (i < j) {
+    reverse = array[i];
+    array[i] = array[j];
+    array[j] = reverse;
+    i++;
+    j--;
    }
+  console.log(array);
 }
 
-reverseArray([1, 2, 3, 4]);
+reverseArrayInPlace(['A', 'B', 'C', 'D']);
 
 
 // Задача №5. Свёртка
@@ -101,7 +110,7 @@ function getNames (date) {
 getNames(new Date (2018, 0, 17)); // Wednesday, January
 
 
-// Задача №12. Разница в годах 
+// Задача №12. Разница в годах
 
 function differenceInYears (somedate, today) {
 

@@ -3,16 +3,16 @@
 function makeCounter() {
   var count = 1;
   return {
-    inc: function() { return count++;},
-    dec: function() {return count--;}
+    next: function() { return count++;},
+    prev: function() {return count--;}
   };
 }
 
 var x = makeCounter();
 
-console.log (x.inc()); // 1
-console.log (x.inc()); // 2
-console.log (x.inc()); // 3
-console.log (x.dec()); // 4
-console.log (x.dec()); // 3
-console.log (x.dec()); // 2
+console.log (x.next()); // 1
+console.log (x.next()); // 2
+console.log (x.next()); // 3
+console.log (x.prev()); // 4
+console.log (x.prev()); // 3
+console.log (x.prev()); // 2
